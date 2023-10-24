@@ -11,10 +11,14 @@ function reload2() {
 function reload3() {
 	document.getElementById('asd').src += '';
 }
+function reload4() {
+	document.getElementById('asdf').src += '';
+}
 
 document.getElementById('reload1').onclick = reload1;
 document.getElementById('reload2').onclick = reload2;
 document.getElementById('reload3').onclick = reload3;
+document.getElementById('reload4').onclick = reload4;
 
 
 
@@ -25,26 +29,43 @@ function tubchange() {
 		document.getElementById('tub1').classList.add('tubmenuselected');
 		document.getElementById('tub2').classList.remove('tubmenuselected');
 		document.getElementById('tub3').classList.remove('tubmenuselected');
+		document.getElementById('tub4').classList.remove('tubmenuselected');
 
 		document.getElementById('iframecont1').classList.remove('iframeconthidden');
 		document.getElementById('iframecont2').classList.add('iframeconthidden');
 		document.getElementById('iframecont3').classList.add('iframeconthidden');
+		document.getElementById('iframecont4').classList.add('iframeconthidden');
 	} else if (tubtreger == 2) {
 		document.getElementById('tub1').classList.remove('tubmenuselected');
 		document.getElementById('tub2').classList.add('tubmenuselected');
 		document.getElementById('tub3').classList.remove('tubmenuselected');
+		document.getElementById('tub4').classList.remove('tubmenuselected');
 
 		document.getElementById('iframecont1').classList.add('iframeconthidden');
 		document.getElementById('iframecont2').classList.remove('iframeconthidden');
 		document.getElementById('iframecont3').classList.add('iframeconthidden');
+		document.getElementById('iframecont4').classList.add('iframeconthidden');
 	} else if (tubtreger == 3) {
 		document.getElementById('tub1').classList.remove('tubmenuselected');
 		document.getElementById('tub2').classList.remove('tubmenuselected');
 		document.getElementById('tub3').classList.add('tubmenuselected');
+		document.getElementById('tub4').classList.remove('tubmenuselected');
 
 		document.getElementById('iframecont1').classList.add('iframeconthidden');
 		document.getElementById('iframecont2').classList.add('iframeconthidden');
 		document.getElementById('iframecont3').classList.remove('iframeconthidden');
+		document.getElementById('iframecont4').classList.add('iframeconthidden');
+	}
+	else if (tubtreger == 4) {
+		document.getElementById('tub1').classList.remove('tubmenuselected');
+		document.getElementById('tub2').classList.remove('tubmenuselected');
+		document.getElementById('tub3').classList.remove('tubmenuselected');
+		document.getElementById('tub4').classList.add('tubmenuselected');
+
+		document.getElementById('iframecont1').classList.add('iframeconthidden');
+		document.getElementById('iframecont2').classList.add('iframeconthidden');
+		document.getElementById('iframecont3').classList.add('iframeconthidden');
+		document.getElementById('iframecont4').classList.remove('iframeconthidden');
 	}
 }
 
@@ -60,10 +81,15 @@ function tubtregerchange3() {
 	tubtreger = 3;
 	tubchange();
 }
+function tubtregerchange4() {
+	tubtreger = 4;
+	tubchange();
+}
 
 document.getElementById('tub1').onclick = tubtregerchange1;
 document.getElementById('tub2').onclick = tubtregerchange2;
 document.getElementById('tub3').onclick = tubtregerchange3;
+document.getElementById('tub4').onclick = tubtregerchange4;
 
 
 
@@ -86,6 +112,12 @@ document.getElementById('dl1').onclick = dl1;
 // 	document.getElementById("dl3").href = "./file/test3.sb3";
 // }
 // document.getElementById('dl3').onclick = dl3;
+
+// function dl4() {
+// 	document.getElementById("dl4").download = "test4.sb3"
+// 	document.getElementById("dl4").href = "./file/test4.sb3";
+// }
+// document.getElementById('dl4').onclick = dl4;
 
 
 
@@ -121,3 +153,14 @@ function sampleclose3() {
 	document.getElementById('sample-img-cantainar3').classList.add('sample-hidden');
 }
 document.getElementById('sample-close3').onclick = sampleclose3;
+
+// 4
+function sampleopen4() {
+	document.getElementById('sample-img-cantainar4').classList.remove('sample-hidden');
+}
+document.getElementById('sample4').onclick = sampleopen4;
+
+function sampleclose4() {
+	document.getElementById('sample-img-cantainar4').classList.add('sample-hidden');
+}
+document.getElementById('sample-close4').onclick = sampleclose4;
