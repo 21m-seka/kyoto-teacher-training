@@ -14,11 +14,15 @@ function reload3() {
 function reload4() {
 	document.getElementById('asdf').src += '';
 }
+function reload4() {
+	document.getElementById('asdfg').src += '';
+}
 
 document.getElementById('reload1').onclick = reload1;
 document.getElementById('reload2').onclick = reload2;
 document.getElementById('reload3').onclick = reload3;
 document.getElementById('reload4').onclick = reload4;
+document.getElementById('reload5').onclick = reload4;
 
 
 
@@ -30,42 +34,63 @@ function tubchange() {
 		document.getElementById('tub2').classList.remove('tubmenuselected');
 		document.getElementById('tub3').classList.remove('tubmenuselected');
 		document.getElementById('tub4').classList.remove('tubmenuselected');
+		document.getElementById('tub5').classList.remove('tubmenuselected');
 
 		document.getElementById('iframecont1').classList.remove('iframeconthidden');
 		document.getElementById('iframecont2').classList.add('iframeconthidden');
 		document.getElementById('iframecont3').classList.add('iframeconthidden');
 		document.getElementById('iframecont4').classList.add('iframeconthidden');
+		document.getElementById('iframecont5').classList.add('iframeconthidden');
 	} else if (tubtreger == 2) {
 		document.getElementById('tub1').classList.remove('tubmenuselected');
 		document.getElementById('tub2').classList.add('tubmenuselected');
 		document.getElementById('tub3').classList.remove('tubmenuselected');
 		document.getElementById('tub4').classList.remove('tubmenuselected');
+		document.getElementById('tub5').classList.remove('tubmenuselected');
 
 		document.getElementById('iframecont1').classList.add('iframeconthidden');
 		document.getElementById('iframecont2').classList.remove('iframeconthidden');
 		document.getElementById('iframecont3').classList.add('iframeconthidden');
 		document.getElementById('iframecont4').classList.add('iframeconthidden');
+		document.getElementById('iframecont5').classList.add('iframeconthidden');
 	} else if (tubtreger == 3) {
 		document.getElementById('tub1').classList.remove('tubmenuselected');
 		document.getElementById('tub2').classList.remove('tubmenuselected');
 		document.getElementById('tub3').classList.add('tubmenuselected');
 		document.getElementById('tub4').classList.remove('tubmenuselected');
+		document.getElementById('tub5').classList.remove('tubmenuselected');
 
 		document.getElementById('iframecont1').classList.add('iframeconthidden');
 		document.getElementById('iframecont2').classList.add('iframeconthidden');
 		document.getElementById('iframecont3').classList.remove('iframeconthidden');
 		document.getElementById('iframecont4').classList.add('iframeconthidden');
+		document.getElementById('iframecont5').classList.add('iframeconthidden');
 	}
 	else if (tubtreger == 4) {
 		document.getElementById('tub1').classList.remove('tubmenuselected');
 		document.getElementById('tub2').classList.remove('tubmenuselected');
 		document.getElementById('tub3').classList.remove('tubmenuselected');
 		document.getElementById('tub4').classList.add('tubmenuselected');
+		document.getElementById('tub5').classList.remove('tubmenuselected');
 
 		document.getElementById('iframecont1').classList.add('iframeconthidden');
 		document.getElementById('iframecont2').classList.add('iframeconthidden');
 		document.getElementById('iframecont3').classList.add('iframeconthidden');
 		document.getElementById('iframecont4').classList.remove('iframeconthidden');
+		document.getElementById('iframecont5').classList.add('iframeconthidden');
+	}
+	else if (tubtreger == 4) {
+		document.getElementById('tub1').classList.remove('tubmenuselected');
+		document.getElementById('tub2').classList.remove('tubmenuselected');
+		document.getElementById('tub3').classList.remove('tubmenuselected');
+		document.getElementById('tub4').classList.remove('tubmenuselected');
+		document.getElementById('tub5').classList.add('tubmenuselected');
+
+		document.getElementById('iframecont1').classList.add('iframeconthidden');
+		document.getElementById('iframecont2').classList.add('iframeconthidden');
+		document.getElementById('iframecont3').classList.add('iframeconthidden');
+		document.getElementById('iframecont4').classList.add('iframeconthidden');
+		document.getElementById('iframecont5').classList.remove('iframeconthidden');
 	}
 }
 
@@ -85,11 +110,16 @@ function tubtregerchange4() {
 	tubtreger = 4;
 	tubchange();
 }
+function tubtregerchange5() {
+	tubtreger = 5;
+	tubchange();
+}
 
 document.getElementById('tub1').onclick = tubtregerchange1;
 document.getElementById('tub2').onclick = tubtregerchange2;
 document.getElementById('tub3').onclick = tubtregerchange3;
 document.getElementById('tub4').onclick = tubtregerchange4;
+document.getElementById('tub5').onclick = tubtregerchange5;
 
 
 
