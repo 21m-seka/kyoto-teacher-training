@@ -78,8 +78,7 @@ function tubchange() {
 		document.getElementById('iframecont3').classList.add('iframeconthidden');
 		document.getElementById('iframecont4').classList.remove('iframeconthidden');
 		document.getElementById('iframecont5').classList.add('iframeconthidden');
-	}
-	else if (tubtreger == 5) {
+	} else if (tubtreger == 5) {
 		document.getElementById('tub1').classList.remove('tubmenuselected');
 		document.getElementById('tub2').classList.remove('tubmenuselected');
 		document.getElementById('tub3').classList.remove('tubmenuselected');
