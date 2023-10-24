@@ -148,6 +148,11 @@ document.getElementById('dl1').onclick = dl1;
 // }
 // document.getElementById('dl4').onclick = dl4;
 
+// function dl5() {
+// 	document.getElementById("dl5").download = "test5.sb3"
+// 	document.getElementById("dl5").href = "./file/test5.sb3";
+// }
+// document.getElementById('dl5').onclick = dl5;
 
 
 // サンプル表示切り替え
@@ -193,3 +198,14 @@ function sampleclose4() {
 	document.getElementById('sample-img-cantainar4').classList.add('sample-hidden');
 }
 document.getElementById('sample-close4').onclick = sampleclose4;
+
+// 5
+function sampleopen5() {
+	document.getElementById('sample-img-cantainar5').classList.remove('sample-hidden');
+}
+document.getElementById('sample5').onclick = sampleopen5;
+
+function sampleclose5() {
+	document.getElementById('sample-img-cantainar5').classList.add('sample-hidden');
+}
+document.getElementById('sample-close5').onclick = sampleclose5;
