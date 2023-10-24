@@ -1,0 +1,189 @@
+@charset "UTF-8";
+body {
+	background-color: #fff;
+}
+
+
+.containar {
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+}
+
+.tubcontainar {
+	position: relative;
+	display: grid;
+  grid-template-columns: 60px 5px 60px 5px 60px;
+	left: 15px;
+}
+
+.tubmenu {
+	width: 60px;
+	height: 30px;
+	text-align: center;
+	padding-top: 10px;
+	border: solid;
+	border-bottom: none;
+	z-index: 99;
+	margin-bottom: -2px;
+	background-color: #e5e5e5;
+	color: #a5a5a5;
+
+	user-select: none;
+}
+
+.tubmenuselected {
+	background-color: #fff;
+	/* border-bottom: none; */
+	z-index: 101;
+	color: #000000;
+}
+
+.iframecont {
+	position:absolute;
+	border: solid;
+	/* border-top: solid; */
+	width: 1000px;
+	height: 500px;
+	background-color: #fff;
+	z-index: 100;
+}
+
+.iframeconthidden {
+	visibility: hidden;
+}
+
+.reloadbutton {
+	position:absolute;
+	top: 10px;
+  left: 10px;
+}
+
+.title {
+	position:absolute;
+	top: 5px;
+	left: 50px;
+	color: #000000;
+	font-size: 20pt;
+	font-weight: bold;
+}
+
+.scratch {
+	position:absolute;
+	top: 40px;
+	left: 5px;
+}
+
+
+.sample {
+	position: absolute;
+	top: 55px;
+	left: 505px;
+	text-decoration: none;
+	color: #000000;
+	
+  padding: 15px 35px;
+  background: none;
+  border: none;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.sample:after, .sample:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 2px solid #000;
+  transition: transform 0.2s;
+}
+.sample:after {
+  transform: translate(3px, 3px);
+}
+.sample:before {
+  transform: translate(-3px, -3px);
+}
+.sample:hover:after, .sample:hover:before {
+  transform: translate(0);
+}
+
+.sample:valid {
+	color: #000000;
+}
+
+.dlbutton {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 40px;
+	left: 740px;
+	color: #000000;
+
+	border-radius: 25px;
+}
+.dlbutton:hover {
+	background-color: #eaeaea;
+}
+
+.dlbuttonimg {
+	padding-left: 12.5px;
+	padding-top: 12.5px;
+}
+
+.download-info {
+	position: absolute;
+	visibility: hidden;
+	width: 174px;
+	height: 54px;
+	top: -10px;
+	left: 670px;
+}
+
+.dlbutton:hover + .download-info {
+	visibility: visible;
+}
+
+
+
+.sample-img-cantainar {
+	position: absolute;
+	width: 400px;
+	height: 450px;
+	top: 20px;
+	left: 500px;
+	background-color: #ffffff;
+	border: solid;
+}
+
+.sample-hidden {
+	visibility: hidden;
+	user-select: none;
+}
+
+.sample-img-close {
+	position: absolute;
+	top: 15px;
+	left: 360px;
+}
+
+.sample-img {
+	max-width: 340px;
+	max-height: 412px;
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+
+.contact {
+	position: relative;
+	margin-top: 550px;
+}
+
+.contact-info {
+	position: absolute;
+	left: 43%;
+}
