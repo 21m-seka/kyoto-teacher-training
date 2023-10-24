@@ -14,7 +14,7 @@ function reload3() {
 function reload4() {
 	document.getElementById('asdf').src += '';
 }
-function reload4() {
+function reload5() {
 	document.getElementById('asdfg').src += '';
 }
 
@@ -22,7 +22,7 @@ document.getElementById('reload1').onclick = reload1;
 document.getElementById('reload2').onclick = reload2;
 document.getElementById('reload3').onclick = reload3;
 document.getElementById('reload4').onclick = reload4;
-document.getElementById('reload5').onclick = reload4;
+document.getElementById('reload5').onclick = reload5;
 
 
 
