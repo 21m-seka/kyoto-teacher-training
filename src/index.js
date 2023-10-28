@@ -1,4 +1,3 @@
-
 let tubtreger;
 
 // iframeリロード
@@ -65,8 +64,7 @@ function tubchange() {
 		document.getElementById('iframecont3').classList.remove('iframeconthidden');
 		document.getElementById('iframecont4').classList.add('iframeconthidden');
 		document.getElementById('iframecont5').classList.add('iframeconthidden');
-	}
-	else if (tubtreger == 4) {
+	} else if (tubtreger == 4) {
 		document.getElementById('tub1').classList.remove('tubmenuselected');
 		document.getElementById('tub2').classList.remove('tubmenuselected');
 		document.getElementById('tub3').classList.remove('tubmenuselected');
